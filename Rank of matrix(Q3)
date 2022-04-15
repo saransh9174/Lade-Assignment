@@ -1,4 +1,3 @@
-# Python 3 program to find rank of a matrix
 class rankMatrix(object):
 	def __init__(self, Matrix):
 		self.R = len(Matrix)
