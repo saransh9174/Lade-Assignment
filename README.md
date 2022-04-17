@@ -1,3 +1,2 @@
 # Lade-Assignment
-LADE assignment
 Hello there...
