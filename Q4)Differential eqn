@@ -1,0 +1,16 @@
+import numpy as np
+import sympy as sp
+t=sp.Symbol("t")
+x=sp.Function("x")(t)
+print("given equation is: ")
+diffeq=sp.Eq(x.diff(t)+(x/10),2-1.5*sp.exp(-t/10))
+ans=sp.dsolve(diffeq)
+print(diffeq)
+print("General Solution: ")
+print(ans)
+ics={x.subs(t,0):0.5}
+print("Particular solutiona at x=0.5: ")
+ans2=sp.dsolve(diffeq,ics=ics)
+print(ans2)
+k=ans2.subs(t,10)
+print(k)
